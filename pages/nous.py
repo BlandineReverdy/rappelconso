@@ -317,19 +317,19 @@ for col, membre in zip(cols, membres):
     # -----------------------------
     # Remerciements
     # -----------------------------
-    st.markdown('<div class="titre-page">Remerciements</div>', unsafe_allow_html=True)
+st.markdown('<div class="titre-page">Remerciements</div>', unsafe_allow_html=True)
 
-    col_texte, col_personnes = st.columns([2, 1.2], gap="large")
+col_texte, col_personnes = st.columns([2, 1.2], gap="large")
 
-    with col_texte:
-        st.markdown(
-            f"""
-            <div class="boite-remerciements">
-                {texte_remerciements}
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
+with col_texte:
+    st.markdown(
+        f"""
+        <div class="boite-remerciements">
+            {texte_remerciements}
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
     with col_personnes:
         cols_photos = st.columns(2, gap="small")
